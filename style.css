@@ -72,3 +72,29 @@ body {
     text-align: center;
     margin-top: 24px;
 }
+
+.booking {
+    background-color:#F7B180;
+    padding: 120px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking p {
+    font-family: "Sacremento", "Lucida Handwriting", "Brush Script MT", cursive;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 85px;
+}
+
+.booking-buttons a {
+    padding: 16px 44px;
+    text-decoration: none;
+}
+
+.booking-buttons a:first-child {
+    color: white;
+    background-color: #18471B;
+
+}
