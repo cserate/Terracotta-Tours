@@ -75,7 +75,7 @@ body {
 
 .booking {
     background-color:#F7B180;
-    padding: 120px 80px;
+    padding: 120px 144px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,15 +86,37 @@ body {
     font-weight: 400;
     font-size: 80px;
     line-height: 85px;
+    margin-left: 80px;
 }
 
 .booking-buttons a {
     padding: 16px 44px;
     text-decoration: none;
+    border: 1px solid black;
+    border-radius: 8px;
 }
 
 .booking-buttons a:first-child {
     color: white;
     background-color: #18471B;
+    margin-right: 45px;
+}
 
+.contact {
+    background-color: white;
+    color: black;
+    margin-right: 64px;
+}
+
+footer {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+footer img {
+    width:44px;
+    height:44px;
+    margin: 0 24px;
+    
 }
