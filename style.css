@@ -109,14 +109,19 @@ body {
 }
 
 footer {
+    height: 425px;
     display: flex;
     flex-direction:column;
+    justify-content: flex-end;
     align-items: center;
 }
 
 footer img {
     width:44px;
     height:44px;
-    margin: 0 24px;
-    
+    margin: 40px 24px;
+}
+
+footer p {
+    margin-bottom: 44px;
 }
