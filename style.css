@@ -201,3 +201,14 @@ footer p {
         height: 306px;
     }
 }
+
+@media (min-width: 320px) and (max-width: 1197px) {
+    .card-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    hr {
+        display: none;
+    }
+}
