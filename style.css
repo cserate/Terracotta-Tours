@@ -133,3 +133,71 @@ footer img {
 footer p {
     margin-bottom: 44px;
 }
+
+/*tablet*/
+@media (min-width: 1198px) and (max-width: 1799px){
+    .featured {
+        background-color: #F7B180;
+        padding: 80px 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .featured img {
+        width: 750px;
+        height: 440px;
+    }
+
+    .featuredText {
+        width: 686px;
+        margin-top: 52px;
+    }
+    
+    #featuredTitle {
+        margin-bottom: 24px;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    
+    .booking {
+        background-color:#F7B180;
+        padding: 120px 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .booking p {
+        font-family: "Sacremento", "Lucida Handwriting", "Brush Script MT", cursive;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 85px;
+        margin-left: 80px;
+    }
+    
+    .booking-buttons a {
+        padding: 16px 44px;
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 8px;
+    }
+    
+    .booking-buttons a:first-child {
+        color: white;
+        background-color: #18471B;
+        margin-right: 45px;
+    }
+
+    hr {
+        width: 848px;
+        height: 1px;
+        left: -248px;
+        top: 192px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    footer {
+        height: 306px;
+    }
+}
