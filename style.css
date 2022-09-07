@@ -123,11 +123,33 @@ nav button, .about button{
 }
 .about :nth-child(3, 4){
     font-size: 18px;
-    
-
 }
 
 .about button {
     margin-top: 20px;
 }
+
+.awards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pic1 {
+    ellipse(282px, 278px);
+    /*width: 282px;
+    height: 278px;*/
+}
+
+.pic2 {
+    width: 282px;
+    height: 278px;
+
+}
+
+.pic3 {
+    ellipse(318px, 298px);
+    
+}
+
 @media ()
