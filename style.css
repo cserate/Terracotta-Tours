@@ -5,5 +5,47 @@
 }
 /*This is just a test*/
 body {
-    background-color: rgb(36, 83, 83);
+    background-color: aqua;
 }
+
+.flex-container {
+    
+}
+
+header {
+    /*remove later*/ border: solid 1px blue;
+}
+
+header img {
+
+}
+
+header p {
+    /*remove later*/ border: solid 1px purple;
+
+}
+
+nav {
+    /*remove later*/ border: solid 1px red;
+
+}
+nav a {
+    
+}
+
+nav button {
+    
+
+}
+
+.button1 {
+    
+    
+    
+}
+
+.button2 {
+    
+}
+
+
