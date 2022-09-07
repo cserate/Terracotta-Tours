@@ -50,7 +50,7 @@ nav a {
     padding-right: 15px;
 }
 
-nav button {
+nav button, .about button{
     padding: 11px 24px;
     border-radius: 6px;
     border: 1px solid #18471B;
@@ -71,5 +71,69 @@ nav button {
     
 }
 
+.banner {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
 
+.banner img {
+    /*cannot be 100%, because the image reduces in tablet and mobile*/
+    height: 960px;
+    width: 1680px;
+}
+
+.banner p {
+    /*struggling to get the text in one line without wrapping*/
+    font-family: "Sacramento";
+    color: #F7B180;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content; /*is this the problem area?*/
+}
+
+.banner button {
+    /*how to get the button and <p> to move as one so there is no overlap in tablet and mobile*/
+    color: white;
+    background-color: #18471B;
+    font-family: "Montserrat";
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 11px 12px;
+    border-radius: 6px;
+    border: 1px solid #18471B;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about {
+    margin: 60px;
+
+}
+
+.about :nth-child(1){
+    font-size: 48px;
+    padding-bottom: 40px;
+}
+
+.about :nth-child(2){
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.about :nth-child(3, 4){
+    font-size: 18px;
+    
+
+}
+
+.about button {
+    margin-top: 20px;
+}
 @media ()
