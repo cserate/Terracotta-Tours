@@ -16,23 +16,31 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 53px;
+    margin
     /*remove later*/ border: solid 1px blue;
 }
 
+.logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 200px;
+}
 header img {
     height: 53px;
+    
 }
 
 header p {
     font-size: 28px;
-    margin-right: 160px;
     /*remove later*/ border: solid 1px purple;
 }
 
 nav {
     font-size: 15px;
+    margin-right: 40px;
     /*remove later*/ border: solid 1px red;
 }
 nav a {
