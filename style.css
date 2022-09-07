@@ -3,7 +3,7 @@
     padding:0;
     box-sizing: border-box;
 }
-/*This is just a test*/
+
 body {
     font-family: "Montserrat";
 }
@@ -83,12 +83,13 @@ nav button {
     /*struggling to get the text in one line without wrapping*/
     font-family: "Sacramento";
     color: #F7B180;
+    /*remove later*/ border: solid 1px white;
     font-size: 80px;
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: fit-content; /*is this the problem area?*/
+    width: 1000px; /*is this the problem area?*/
 }
 
 .banner button {
@@ -102,7 +103,32 @@ nav button {
     border-radius: 6px;
     border: 1px solid #18471B;
     position: absolute;
-    top: 65%;
+    top: 62%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.about {
+    margin: 60px;
+
+}
+
+.about :nth-child(1){
+    font-size: 48px;
+    padding-bottom: 25px;
+}
+
+.about :nth-child(2){
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.about :nth-child(3, 4){
+    font-size: 18px;
+
+
+}
+
+.about button {
+    margin-top: 20px;
 }
