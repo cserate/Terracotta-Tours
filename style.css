@@ -8,17 +8,11 @@ body {
     font-family: "Montserrat";
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: column;
-}
-
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 53px;
-    margin
     /*remove later*/ border: solid 1px blue;
 }
 
@@ -50,7 +44,7 @@ nav a {
     padding-right: 15px;
 }
 
-nav button {
+nav button, .about button {
     padding: 11px 24px;
     border-radius: 6px;
     border: 1px solid #18471B;
@@ -74,13 +68,13 @@ nav button {
 }
 
 .banner img {
-    /*cannot be 100%, because the image reduces in tablet and mobile*/
+    /*cannot be 100%, because figma shows the image reducing in tablet and mobile*/
     height: 960px;
     width: 1680px;
 }
 
 .banner p {
-    /*struggling to get the text in one line without wrapping*/
+    /*struggling to keep the text centered in tablet and mobile*/
     font-family: "Sacramento";
     color: #F7B180;
     /*remove later*/ border: solid 1px white;
@@ -89,7 +83,7 @@ nav button {
     top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1000px; /*is this the problem area?*/
+    width: 1000px; 
 }
 
 .banner button {
@@ -108,8 +102,9 @@ nav button {
     transform: translate(-50%, -50%);
 }
 .about {
-    margin: 60px;
-
+    padding: 60px;
+    width: 100%;
+    /*remove later*/ border: solid 1px orange;
 }
 
 .about :nth-child(1){
@@ -125,10 +120,34 @@ nav button {
 }
 .about :nth-child(3, 4){
     font-size: 18px;
-
-
 }
 
 .about button {
     margin-top: 20px;
+}
+
+.awards {
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+    /*remove later*/ border: solid 1px brown;
+}
+
+.pic1 {
+    ellipse(282px, 278px);
+    /*width: 282px;
+    height: 278px;*/
+}
+
+.pic2 {
+    width: 282px;
+    height: 278px;
+
+}
+
+.pic3 {
+    ellipse(318px, 298px);
+
 }
