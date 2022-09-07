@@ -21,8 +21,14 @@ header {
     /*remove later*/ border: solid 1px blue;
 }
 
+.logo {
+    display: flex;
+
+}
+
 header img {
     height: 53px;
+    margin-right: 20px;
 }
 
 header p {
