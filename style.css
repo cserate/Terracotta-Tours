@@ -63,8 +63,8 @@ nav button, .about button {
 
 .banner {
     position: relative;
-    text-align: center;
     width: 100%;
+    left: 80px;
 }
 
 .banner img {
@@ -73,33 +73,33 @@ nav button, .about button {
     width: 1680px;
 }
 
-.banner p {
+.bannerInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -500px;
+    margin-bottom: 300px;    
+}
+
+.bannerInfo p {
     /*struggling to keep the text centered in tablet and mobile*/
     font-family: "Sacramento";
     color: #F7B180;
-    /*remove later*/ border: solid 1px white;
     font-size: 80px;
-    position: absolute;
-    top: 53%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1000px; 
+    text-align: center;
 }
 
-.banner button {
+.bannerInfo a {
     /*how to get the button and <p> to move as one so there is no overlap in mobile*/
+    text-decoration: none;
     color: white;
     background-color: #18471B;
     font-family: "Montserrat";
     font-size: 20px;
-    text-transform: uppercase;
     padding: 11px 12px;
     border-radius: 6px;
     border: 1px solid #18471B;
-    position: absolute;
-    top: 62%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 48px;
 }
 .about {
     padding: 60px;
