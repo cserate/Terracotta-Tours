@@ -24,11 +24,11 @@ header {
 }
 header img {
     height: 53px;
-    
 }
 
 header p {
     font-size: 28px;
+    margin-left: 20px;
     /*remove later*/ border: solid 1px purple;
 }
 
@@ -136,18 +136,25 @@ nav button, .about button {
 }
 
 .pic1 {
-    ellipse(282px, 278px);
-    /*width: 282px;
-    height: 278px;*/
+    object-fit: cover;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    /*remove later*/ border: solid 1px green;
 }
 
 .pic2 {
-    width: 282px;
-    height: 278px;
-
+    object-fit: cover;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+     /*remove later*/ border: solid 1px green;
 }
 
 .pic3 {
-    ellipse(318px, 298px);
-
+    object-fit: cover;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+     /*remove later*/ border: solid 1px green;
 }
