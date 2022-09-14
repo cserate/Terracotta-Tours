@@ -86,15 +86,12 @@ nav button, .about button {
     font-family: "Sacramento";
     color: #F7B180;
     font-size: 80px;
-<<<<<<< HEAD
     position: absolute;
     top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1000px;
-=======
     text-align: center;
->>>>>>> a84ecab73722a483c794e206f4e9ae60700887cc
 }
 
 .bannerInfo a {
@@ -170,34 +167,6 @@ nav button, .about button {
     height: 300px;
     width: 300px;
      /*remove later*/ border: 1px solid green;
-}
-
-<<<<<<< HEAD
-/*Mobile Styles*/
-@media only screen and (max-width: 400px) {
-    nav {
-        display: none;
-    }
-
-    #menuchk:checked + nav {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: flex-end; 
-        /*position is too far to the left and the checkbox is visible*/
-        position: absolute;
-        top: 60px;
-        left: 0
-        right: 10px;
-    
-    }
-
-    .burger {
-        display: block;
-        font-size: 2em;
-        /*remove later*/ border: 1px solid blue;
-=======
-    font-family: Montserrat, sans-serif;
 }
 
 .featured {
@@ -395,7 +364,33 @@ footer p {
     }
 }
 
+/*Mobile Styles*/
 @media (min-width: 320px) and (max-width: 1197px) {
+    
+    nav {
+        display: none;
+    }
+
+    #menuchk:checked + nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-end; 
+        /*position is too far to the left and the checkbox is visible*/
+        position: absolute;
+        top: 60px;
+        left: 0
+        right: 10px;
+    
+    }
+
+    .burger {
+        display: block;
+        font-size: 2em;
+        /*remove later*/ border: 1px solid blue;
+    font-family: Montserrat, sans-serif;
+    }
+
     .featured {
         background-color: #F7B180;
         padding: 80px 0;
@@ -453,6 +448,5 @@ footer p {
 
     footer {
         height: 194px;
->>>>>>> a84ecab73722a483c794e206f4e9ae60700887cc
     }
 }
