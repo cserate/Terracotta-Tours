@@ -18,9 +18,9 @@ header {
 
 .logo {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 200px;
+    padding-left: 200px;
 }
 header img {
     height: 53px;
@@ -31,7 +31,9 @@ header p {
     margin-left: 20px;
     /*remove later*/ border: solid 1px purple;
 }
-
+#menuchk {
+    display: none;
+}
 nav {
     font-size: 15px;
     margin-right: 40px;
@@ -61,45 +63,53 @@ nav button, .about button {
     padding-right: 20px;
 }
 
+
 .banner {
     position: relative;
-    text-align: center;
     width: 100%;
+    left: 80px;
 }
 
 .banner img {
-    /*cannot be 100%, because figma shows the image reducing in tablet and mobile*/
+    /*cannot be 100%, because figma shows the image reducing in tablet and mobile
     height: 960px;
     width: 1680px;
+    */
+    width: 100%;
 }
 
-.banner p {
+.bannerInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -500px;
+    margin-bottom: 300px;    
+}
+
+.bannerInfo p {
     /*struggling to keep the text centered in tablet and mobile*/
     font-family: "Sacramento";
     color: #F7B180;
-    /*remove later*/ border: solid 1px white;
     font-size: 80px;
     position: absolute;
     top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1000px; 
+    width: 1000px;
+    text-align: center;
 }
 
-.banner button {
+.bannerInfo a {
     /*how to get the button and <p> to move as one so there is no overlap in mobile*/
+    text-decoration: none;
     color: white;
     background-color: #18471B;
     font-family: "Montserrat";
     font-size: 20px;
-    text-transform: uppercase;
     padding: 11px 12px;
     border-radius: 6px;
     border: 1px solid #18471B;
-    position: absolute;
-    top: 62%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 48px;
 }
 .about {
     padding: 60px;
@@ -107,18 +117,23 @@ nav button, .about button {
     /*remove later*/ border: solid 1px orange;
 }
 
-.about :nth-child(1){
+.about :nth-child(1) {
     font-size: 48px;
     padding-bottom: 25px;
 }
 
-.about :nth-child(2){
+.about :nth-child(2) {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
     padding-bottom: 20px;
 }
-.about :nth-child(3, 4){
+
+.about :nth-child(3) {
+    font-size: 18px;
+}
+
+.about :nth-child(4) {
     font-size: 18px;
 }
 
@@ -156,5 +171,288 @@ nav button, .about button {
     border-radius: 50%;
     height: 300px;
     width: 300px;
-     /*remove later*/ border: solid 1px green;
+     /*remove later*/ border: 1px solid green;
+}
+
+.featured {
+    background-color: #F7B180;
+    display: flex;
+    padding: 80px;
+}
+
+.featured img {
+    width: 750px;
+    height: 440px;
+    margin-right: 80px
+}
+
+#featuredTitle {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#browseTitle {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    margin: 120px 0 135px 80px;
+}
+
+#browseContent {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    margin: 0 300px 0 80px;
+
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 429px;
+    height:560px;
+    border: 1px solid black;
+    margin: 85px;
+}
+
+.card img {
+    width: 429px;
+    height: 275px;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.card-content {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.booking {
+    background-color:#F7B180;
+    padding: 120px 144px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking p {
+    font-family: "Sacremento", "Lucida Handwriting", "Brush Script MT", cursive;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 85px;
+    margin-left: 80px;
+}
+
+.booking-buttons a {
+    padding: 16px 44px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.booking-buttons a:first-child {
+    color: white;
+    background-color: #18471B;
+    margin-right: 45px;
+}
+
+.contact {
+    background-color: white;
+    color: black;
+    margin-right: 64px;
+}
+
+footer {
+    height: 425px;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+hr {
+    width: 1520px;
+    height: 1px;
+    left: 80px;
+    top: 192px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+footer img {
+    width:44px;
+    height:44px;
+    margin: 40px 24px;
+}
+
+footer p {
+    margin-bottom: 44px;
+}
+
+/*tablet*/
+@media (min-width: 1198px) and (max-width: 1799px){
+    .featured {
+        background-color: #F7B180;
+        padding: 80px 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .featured img {
+        width: 750px;
+        height: 440px;
+    }
+
+    .featuredText {
+        width: 686px;
+        margin-top: 52px;
+    }
+    
+    #featuredTitle {
+        margin-bottom: 24px;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    
+    .booking {
+        background-color:#F7B180;
+        padding: 120px 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .booking p {
+        font-family: "Sacremento", "Lucida Handwriting", "Brush Script MT", cursive;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 85px;
+        margin-left: 80px;
+    }
+    
+    .booking-buttons a {
+        padding: 16px 44px;
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 8px;
+    }
+    
+    .booking-buttons a:first-child {
+        color: white;
+        background-color: #18471B;
+        margin-right: 45px;
+    }
+
+    hr {
+        width: 848px;
+        height: 1px;
+        left: -248px;
+        top: 192px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    footer {
+        height: 306px;
+    }
+}
+
+/*Mobile Styles*/
+/*should the max-width be smaller?  1197 pixels seems too large for mobile*/
+@media (min-width: 320px) and (max-width: 1197px) {
+    nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        font-size: 2em;
+        /*remove later*/ border: 1px solid blue;
+    font-family: Montserrat, sans-serif;
+    }
+
+    #menuchk:checked + nav {
+        display: flex;
+        width: 100%;
+        align-items: flex-end; 
+        /*position is too far to the left and the checkbox is visible*/
+        position: absolute;
+        top: 53px;
+        left: 0
+        right: 10px;
+    
+    }
+
+    
+
+    .featured {
+        background-color: #F7B180;
+        padding: 80px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .featured img {
+        margin-left: 88px;
+        width: 385px;
+        height: 384px;
+    }
+
+    .featuredText {
+        width: 352px;
+        margin-top: 52px;
+        text-align: center;
+    }
+    
+    #featuredTitle {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .browse {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #browseTitle, #browseContent {
+        width: 401px;
+        margin-right: 64px;
+    }
+    
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .booking {
+        padding: 80px 8px;
+        flex-wrap: wrap;
+    }
+
+    .booking-buttons {
+        margin: 48px 24px 24px 96px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    footer {
+        height: 194px;
+    }
 }
