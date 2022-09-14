@@ -18,7 +18,7 @@ header {
 
 .logo {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-left: 200px;
 }
@@ -83,7 +83,7 @@ nav button, .about button {
     top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1000px; 
+    width: 1000px;
 }
 
 .banner button {
@@ -107,18 +107,23 @@ nav button, .about button {
     /*remove later*/ border: solid 1px orange;
 }
 
-.about :nth-child(1){
+.about :nth-child(1) {
     font-size: 48px;
     padding-bottom: 25px;
 }
 
-.about :nth-child(2){
+.about :nth-child(2) {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
     padding-bottom: 20px;
 }
-.about :nth-child(3, 4){
+
+.about :nth-child(3) {
+    font-size: 18px;
+}
+
+.about :nth-child(4) {
     font-size: 18px;
 }
 
@@ -156,5 +161,31 @@ nav button, .about button {
     border-radius: 50%;
     height: 300px;
     width: 300px;
-     /*remove later*/ border: solid 1px green;
+     /*remove later*/ border: 1px solid green;
+}
+
+/*Mobile Styles*/
+@media only screen and (max-width: 400px) {
+    nav {
+        display: none;
+    }
+
+    #menuchk:checked + nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-end; 
+        /*position is too far to the left and the checkbox is visible*/
+        position: absolute;
+        top: 60px;
+        left: 0
+        right: 10px;
+    
+    }
+
+    .burger {
+        display: block;
+        font-size: 2em;
+        /*remove later*/ border: 1px solid blue;
+    }
 }
