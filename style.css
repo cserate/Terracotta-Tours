@@ -20,7 +20,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 200px;
+    padding-left: 200px;
+    /*remove later*/ border: solid 1px yellowgreen;
 }
 header img {
     height: 53px;
@@ -61,24 +62,30 @@ nav button, .about button {
     padding-right: 20px;
 }
 
+#menuchk {
+    display: none;
+}
+
 .banner {
     position: relative;
     width: 100%;
-    left: 80px;
 }
 
 .banner img {
-    /*cannot be 100%, because figma shows the image reducing in tablet and mobile*/
+    /*cannot be 100%, because figma shows the image reducing in tablet and mobile
     height: 960px;
     width: 1680px;
+    */
+    width: 100%;
 }
 
 .bannerInfo {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: -500px;
-    margin-bottom: 300px;    
+    margin-top: -200px;
+    margin-bottom: 100px;    
 }
 
 .bannerInfo p {
@@ -298,6 +305,23 @@ footer p {
 
 /*tablet*/
 @media (min-width: 1198px) and (max-width: 1799px){
+    .logo {
+        display: flex;
+        padding: 60px;
+    }
+    
+    .banner img {
+        /*cannot be 100%, because figma shows the image reducing in tablet and mobile
+        height: 960px;
+        width: 1680px;
+        */
+        width: auto;
+    }
+    
+    .bannerInfo p {
+        width: 50%;
+    }
+    
     .featured {
         background-color: #F7B180;
         padding: 80px 140px;
@@ -371,24 +395,23 @@ footer p {
         display: none;
     }
 
-    #menuchk:checked + nav {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: flex-end; 
-        /*position is too far to the left and the checkbox is visible*/
-        position: absolute;
-        top: 60px;
-        left: 0
-        right: 10px;
-    
-    }
-
     .burger {
         display: block;
         font-size: 2em;
+        font-family: Montserrat, sans-serif;
         /*remove later*/ border: 1px solid blue;
-    font-family: Montserrat, sans-serif;
+        
+    }
+    /*why do I have 2 burgers?*/
+    #menuchk:checked + nav {
+        display: flex;
+        width: 100%;
+        align-items: flex-end; 
+        position: absolute;
+        top: 53px;
+        left: 0
+        right: 10px;
+    
     }
 
     .featured {
