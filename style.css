@@ -13,7 +13,7 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 53px;
-    /*remove later*/ border: solid 1px blue;
+    /*remove later border: solid 1px blue; */
 }
 
 .logo {
@@ -21,7 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-left: 200px;
-    /*remove later*/ border: solid 1px yellowgreen;
+    /*remove later border: solid 1px yellowgreen;*/
 }
 header img {
     height: 53px;
@@ -30,13 +30,13 @@ header img {
 header p {
     font-size: 28px;
     margin-left: 20px;
-    /*remove later*/ border: solid 1px purple;
+    /*remove later border: solid 1px purple;*/
 }
 
 nav {
     font-size: 15px;
     margin-right: 40px;
-    /*remove later*/ border: solid 1px red;
+    /*remove later border: solid 1px red;*/
 }
 nav a {
     text-decoration: none;
@@ -72,7 +72,7 @@ nav button, .about button {
 }
 
 .banner img {
-    /*cannot be 100%, because figma shows the image reducing in tablet and mobile
+    /*cannot be 100%?, because figma shows the image reducing in tablet and mobile
     height: 960px;
     width: 1680px;
     */
@@ -89,7 +89,7 @@ nav button, .about button {
 }
 
 .bannerInfo p {
-    /*struggling to keep the text centered in tablet and mobile*/
+    /*struggling to keep the text centered and in flex-wrap in tablet and mobile*/
     font-family: "Sacramento";
     color: #F7B180;
     font-size: 80px;
@@ -116,7 +116,7 @@ nav button, .about button {
 .about {
     padding: 60px;
     width: 100%;
-    /*remove later*/ border: solid 1px orange;
+    /*remove later border: solid 1px orange;*/
 }
 
 .about :nth-child(1) {
@@ -149,7 +149,7 @@ nav button, .about button {
     justify-content: space-around;
     align-items: center;
     padding: 60px;
-    /*remove later*/ border: solid 1px brown;
+    /*remove later border: solid 1px brown;*/
 }
 
 .pic1 {
@@ -157,7 +157,7 @@ nav button, .about button {
     border-radius: 50%;
     height: 300px;
     width: 300px;
-    /*remove later*/ border: solid 1px green;
+    /*remove later border: solid 1px green;*/
 }
 
 .pic2 {
@@ -165,7 +165,7 @@ nav button, .about button {
     border-radius: 50%;
     height: 300px;
     width: 300px;
-     /*remove later*/ border: solid 1px green;
+     /*remove later border: solid 1px green;*/
 }
 
 .pic3 {
@@ -173,7 +173,7 @@ nav button, .about button {
     border-radius: 50%;
     height: 300px;
     width: 300px;
-     /*remove later*/ border: 1px solid green;
+     /*remove later border: 1px solid green;*/
 }
 
 .featured {
