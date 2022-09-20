@@ -62,7 +62,7 @@ nav button, .about button {
     padding-right: 20px;
 }
 
-#menuchk {
+.burger, #menuchk {
     display: none;
 }
 
@@ -99,6 +99,7 @@ nav button, .about button {
     transform: translate(-50%, -50%);
     width: 1000px;
     text-align: center;
+     /*remove later border: solid 1px orange;*/
 }
 
 .bannerInfo a {
@@ -111,7 +112,9 @@ nav button, .about button {
     padding: 11px 12px;
     border-radius: 6px;
     border: 1px solid #18471B;
-    margin-top: 48px;
+    /*remove later border: solid 1px orange;*/
+    
+    
 }
 .about {
     padding: 60px;
@@ -305,9 +308,14 @@ footer p {
 
 /*tablet*/
 @media (min-width: 1198px) and (max-width: 1799px){
+    .burger, #menuchk {
+        display: none;
+    }
+    
     .logo {
         display: flex;
-        padding: 60px;
+        justify-content: flex-start;
+        align-items: center;
     }
     
     .banner img {
@@ -390,16 +398,20 @@ footer p {
 
 /*Mobile Styles*/
 @media (min-width: 320px) and (max-width: 1197px) {
-    
+    .logo {
+        padding-left: 20px;
+    }
     nav {
         display: none;
     }
 
     .burger {
         display: block;
+        color: gray;
+        margin-right: 20px;
         font-size: 2em;
         font-family: Montserrat, sans-serif;
-        /*remove later*/ border: 1px solid blue;
+        /*remove later border: 1px solid blue;*/
         
     }
     /*why do I have 2 burgers?*/
@@ -411,9 +423,33 @@ footer p {
         top: 53px;
         left: 0
         right: 10px;
-    
+    }
+    .banner img {
+        display: flex;
+        justify-content: center;
+    }
+    .bannerInfo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
     }
 
+    .bannerInfo p {
+        width:70%;
+        text-align: center;
+        margin-top: -100px;
+    }
+
+    .bannerInfo a {
+        margin-top: -300px;
+        justify-content: center;
+    }
+
+    .about {
+        margin-top: -200px;
+    }
     .featured {
         background-color: #F7B180;
         padding: 80px 0;
