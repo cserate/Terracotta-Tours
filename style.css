@@ -92,7 +92,7 @@ nav button, .about button {
     color: #F7B180;
     font-size: 80px;
     position: absolute;
-    top: 53%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1000px;
@@ -392,9 +392,49 @@ footer p {
         top: 53px;
         left: 0
         right: 10px;
+        /*remove later*/ border: 1px solid purple;
     
     }
 
+    .banner img {
+        /*cannot be 100%, because figma shows the image reducing in tablet and mobile*/
+        height: 960px;
+        width: 1680px;
+    }
+    
+    .bannerInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -500px;
+        margin-bottom: 300px;    
+    }
+    
+    .bannerInfo p {
+        /*struggling to keep the text centered in tablet and mobile*/
+        font-family: "Sacramento";
+        color: #F7B180;
+        font-size: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1000px;
+        text-align: center;
+    }
+    
+    .bannerInfo a {
+        /*how to get the button and <p> to move as one so there is no overlap in mobile*/
+        text-decoration: none;
+        color: white;
+        background-color: #18471B;
+        font-family: "Montserrat";
+        font-size: 20px;
+        padding: 11px 12px;
+        border-radius: 6px;
+        border: 1px solid #18471B;
+        margin-top: 48px;
+    }
     
 
     .featured {
