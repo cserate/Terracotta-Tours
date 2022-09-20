@@ -62,7 +62,7 @@ nav button, .about button {
     padding-right: 20px;
 }
 
-#menuchk {
+.burger, #menuchk {
     display: none;
 }
 
@@ -305,6 +305,10 @@ footer p {
 
 /*tablet*/
 @media (min-width: 1198px) and (max-width: 1799px){
+    .burger, #menuchk{
+        display: none;
+    }
+
     .logo {
         display: flex;
         padding: 60px;
